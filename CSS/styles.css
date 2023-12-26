@@ -1,0 +1,110 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3e6e6;
+  margin: 0;
+  padding: 20px; 
+}
+
+h1 {
+  color: #f6f1f1;
+  text-align: center;
+  background-color: #565356;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+h6 {
+  color: #7b1818;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 10px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 1px 10px rgba(219, 109, 109, 0.5);
+}
+
+.boton {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f15252;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 15px;
+  transition: all 0.9s ease-in-out;
+}
+
+.boton:hover {
+  background-color: #c4269f;
+  padding: 13px 20px;
+}
+
+/* Estilos para los formularios */
+input {
+  width: 90%;
+  padding: 15px;
+  font-size: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#resultado {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 90%;
+  margin: 20px auto;
+  color: white;
+  background-color: rgb(220, 108, 108);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 10px rgba(12, 2, 2, 0.5);
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.ocultar {
+  visibility: hidden;
+}
+
+/* Estilos para el elemento select */
+label[for="operacion"] {
+display: block;
+margin-bottom: 10px;
+font-size: 18px;
+}
+
+#operacion {
+width: 100%;
+padding: 10px;
+font-size: 16px;
+border-radius: 5px;
+border: 1px solid #ccc;
+appearance: none; 
+background: white url('data:image/svg+xml;utf8,<svg fill="black" height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z" /></svg>') no-repeat right 10px center; /* Agrega una flecha personalizada al final del select */
+background-position-x: calc(100% - 15px);
+cursor: pointer;
+}
+
+/* Estilo cuando el select está enfocado */
+#operacion:focus {
+outline: none;
+border-color: #555;
+box-shadow: 0 0 5px rgba(85, 85, 85, 0.7);
+}
+
+  
